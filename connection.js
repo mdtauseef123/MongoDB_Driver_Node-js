@@ -1,9 +1,5 @@
 const MongoClient = require("mongodb").MongoClient;
- 
-
 const uri = "mongodb://0.0.0.0:27017/";
- 
-
 const client = new MongoClient(uri);
 async function run() {
     try {
@@ -15,5 +11,4 @@ async function run() {
         await client.close();
     }
 }
- 
 run().catch(console.dir);
